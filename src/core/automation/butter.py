@@ -70,7 +70,7 @@ def fill_butter_template(template_data: dict[str, str]) -> None:
     ensure_browsers_installed()
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
+        browser = p.chromium.launch(headless=False)
         context = browser.new_context(storage_state=SESSION_FILE, accept_downloads=True)
         page = context.new_page()
         page.goto("https://www.usebutter.com/spotify-wrapped-2024-generator")
@@ -81,18 +81,19 @@ def fill_butter_template(template_data: dict[str, str]) -> None:
         page.get_by_role("button", name="Remove 2").get_by_label("Remove").click()
         page.get_by_role("button", name="Remove 1").click()
 
-        # Change the title
-        page.locator("#componentSelector div").filter(has_text="Your 2024 Spotify Unhinged is").get_by_role("img").click()
-        page.get_by_text("Your 2024", exact=True).click()
-        page.get_by_text("Your 2024 Spotify Unhingedis").fill(f"Your {template_data.get('month')}\nSpotify Unwrapped\nis Here")
-        page.get_by_role("textbox").nth(2).fill("24")
-        page.get_by_text("Wrapped Intro").click()
-
-        # Change the subtitle
-        page.locator("div").filter(has_text=re.compile(r"^Make Yours at spotifyunhinged\.com$")).get_by_role("img").click()
-        page.get_by_role("textbox").filter(has_text="Make Yours at spotifyunhinged").fill("Make Yours at https://github.com/Meleagrista/py-spotify-unwrapped")
-        page.get_by_role("textbox").nth(2).fill("8")
-        page.get_by_text("Wrapped Intro").click()
+        # Create a new intro
+        page.get_by_role("button", name="Add Scene").click()
+        page.locator("div").filter(has_text=re.compile(r"^IntroRectanglesDiamondsRibbons$")).get_by_role("img").nth(1).click()
+        page.locator("div").filter(has_text=re.compile(r"^Subtitle$")).first.click()
+        page.get_by_role("button", name="Add Scene").click()
+        page.get_by_role("paragraph").filter(has_text="You ‘[BLANK]’ 32 times this").click()
+        page.get_by_role("textbox").filter(has_text="You ‘[BLANK]’ 32 times this").fill("Your May\nSpotify Unwrapped\nis Here")
+        page.get_by_role("textbox").nth(2).fill("23")
+        page.get_by_text("Wrapped Rectangles").click()
+        page.get_by_role("paragraph").filter(has_text="You’re in the top 1% of [BLANK]").click()
+        page.get_by_role("textbox").filter(has_text="You’re in the top 1% of [BLANK]").fill("Make Yours at https://github.com/Meleagrista/py-spotify-unwrapped")
+        page.get_by_role("textbox").nth(2).fill("7")
+        page.get_by_text("Wrapped Rectangles").click()
 
         # Add scenes
         page.get_by_role("button", name="Add Scene").click()
@@ -199,6 +200,7 @@ def fill_butter_template(template_data: dict[str, str]) -> None:
 
         # Export the video
         page.get_by_text("Wrapped Ribbons").click()
+        page.get_by_role("button", name="Remove 1").get_by_label("Remove").click()
         page.get_by_role("button", name="Export Video").click()
 
         print("Starting download, this may take a while...")
