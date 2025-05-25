@@ -14,3 +14,4 @@
 2. I found a [website](https://www.spotifyunhinged.com) that uses a video template throught a web editor.
 3. Ideally I would like to recreate the video template in something like **React**, but I have zero experience with it so it will make me go over the deadline.
 4. I did use the `playwright` library to automate the interactions with the website, but it needs a session to work.
+5. New users must be registered in the _Dashboard_ to be able to use the app as stated in the [documentation](https://developer.spotify.com/documentation/web-api/concepts/quota-modes).

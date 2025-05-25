@@ -8,7 +8,9 @@ import spotipy
 from dotenv import load_dotenv
 from spotipy import SpotifyOAuth
 
-load_dotenv()
+from src.constants import ENV_FILE
+
+load_dotenv(dotenv_path=ENV_FILE)
 
 YOUR_APP_CLIENT_ID = os.getenv("YOUR_APP_CLIENT_ID")
 YOUR_APP_CLIENT_SECRET = os.getenv("YOUR_APP_CLIENT_SECRET")
@@ -16,12 +18,19 @@ YOUR_APP_CLIENT_SECRET = os.getenv("YOUR_APP_CLIENT_SECRET")
 
 class SpotifyScrapper:
     def __init__(self, max_length: int = 15):
-        self.sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
+        auth_manager = SpotifyOAuth(
             client_id=YOUR_APP_CLIENT_ID,
             client_secret=YOUR_APP_CLIENT_SECRET,
             redirect_uri="http://127.0.0.1:8000/callback",
             scope="user-library-read,user-top-read,user-read-recently-played",
-        ))
+            open_browser=True,
+            show_dialog=True,
+        )
+
+        # TODO: Implement a user identification flow.
+        auth = auth_manager.get_access_token(as_dict=False)
+
+        self.sp = spotipy.Spotify(auth=auth)
         self._max_length = max_length
 
     def _truncate(self, text: str) -> str:
