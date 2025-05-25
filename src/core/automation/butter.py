@@ -70,7 +70,7 @@ def fill_butter_template(template_data: dict[str, str]) -> None:
     ensure_browsers_installed()
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=True)
         context = browser.new_context(storage_state=SESSION_FILE, accept_downloads=True)
         page = context.new_page()
         page.goto("https://www.usebutter.com/spotify-wrapped-2024-generator")
