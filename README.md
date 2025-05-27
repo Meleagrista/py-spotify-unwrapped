@@ -3,7 +3,7 @@
   <img src="/docs/assets/project-logo-01.png" alt="logo" width="200" height="auto" />
   <h1>Spotify Unwrapped</h1>
   <p>
-    Personalized Spotify Wrapped-style video generation from listeing data, currently in a rudimentary state.
+    Personalized Spotify Wrapped-style video generation from listening data, currently in a rudimentary state.
   </p>
   <p>
     <a href="">
