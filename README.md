@@ -94,7 +94,7 @@ After installation, ensure Poetry is added to your `PATH`:
   ```
 
 > [!NOTE] 
-> Poetry is not actually required, you can create an envioment based on the dependencies of `pyproject.toml`
+> Poetry is not actually required, you can create an environment based on the dependencies of `pyproject.toml`
 
 
 [experimental]: https://img.shields.io/badge/experimental-%23FFA500?label=status
