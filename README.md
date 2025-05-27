@@ -1,6 +1,6 @@
 <div align="center">
   <!--suppress CheckImageSize -->
-  <img src="/docs/assets/project-logo-01.png" alt="logo" width="200" height="auto" />
+  <img src="/docs/assets/project-logo-01.png" alt="logo" width="200" height="auto"/>
   <h1>Spotify Unwrapped</h1>
   <p>
     Personalized Spotify Wrapped-style video generation from listeing data, currently in a rudimentary state.
@@ -36,12 +36,11 @@
   - [Build With](#build-with)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
-    - [Spotify for Developers](#spotify-for-developer)
+    - [Spotify for Developers](#spotify-for-developers)
     - [Poetry](#poetry)
-  - [Installation](#installation)
-
 
 <!-- - [Usage](#usage)
+- [Installation](#installation)
   - [Environment Variables](#environment-variables)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
