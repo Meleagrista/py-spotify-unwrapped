@@ -175,5 +175,8 @@ cython_debug/
 
 # Custom ignored files
 /docs/templates/slides/
+/docs/downloads
 config/.env
 config/session/butter_state.json
+.idea
+

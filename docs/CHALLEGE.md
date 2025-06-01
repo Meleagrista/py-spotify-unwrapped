@@ -1,15 +1,20 @@
 ![Challenge banner](/docs/assets/challenge-banner.jpg)
 
 # Challenge
+> This project was built to address a challenge for personal challenge.
+
+<!-- >> [!WARNING]
+> I am currently no longer actively working on this challenge. -->
+
+> [!NOTE]
+> I not currently working on this challenge but I plan on revisiting on a later date.
+
 
 ## Welcome to my pseudo-hackathon project!
 This document outlines the expectations, planning, and results of a coding challenge I undertook to build a small project from scratch in just 24 hours. It serves as a personal log of the tools I used, what I learned, interesting references, and reflections on the experience.
 
 > [!CAUTION]
 > This project is solely for learning purposes. I take no responsibility or liability for the accuracy, completeness, or usefulness of any information provided here.
-
-> [!WARNING]
-> I am currently no longer actively working on this project.
 
 ## Title  
 **What to enter:** A short and memorable name for your project or challenge.  
@@ -106,6 +111,7 @@ Introduce your summary and reflections on the project once complete.
 ## Final Result
 Provide an overview of the completed project or final deliverable.
 ```markdown
+I managed to create a script that access the user account info and through some cheap shortcut is able to generate a video similar to the offical one.
 ```
 
 ### Screenshots
@@ -118,18 +124,21 @@ Include them here to visually document your work.
 Which goals or parts of your objectives did you successfully achieve?  
 Highlight your project’s strengths and accomplishments.
 ```markdown
+I achieved the main goals and also achieved to generate a vidoe output instead of a static one.
 ```
 
 ### What’s Missing?
 Which goals or aspects did you not manage to complete?  
 Reflect on any gaps or features that remain unfinished.
 ```markdown
+I couldn't add a custom statistic due to two reasons: the strict struture of the template left barely any room to add the statitists, and the API has been cutting developers from its features, making it hard to create.
 ```
 
 ### Tech Stack
 What libraries, frameworks, tools, or technologies did you use during development?  
 Summarize the key components of your technical environment.
 ```markdown
+I used spotipy to access the API, and pyhton-ppxt for the static template. For the video generation shortcut I used playwright to emulate user input in the web interface.
 ```
 
 ## Retrospective  
@@ -138,11 +147,13 @@ This section reflects on your overall experience throughout the project, highlig
 ### What went well?  
 Reflect on the parts of the project that worked smoothly or exceeded expectations.
 ```markdown
+Setting up a Spotify app and using the library was very smooth and if not hindered by the goal of generating a review it could have been fun to experiment.
 ```
 
 ### What was challenging?  
 Describe the difficulties or obstacles you encountered during development.
 ```markdown
+The lack of premade template for the wrapped format made me waste a considerable amount of time looking for ways to generate the output.
 ```
 
 ### Biggest surprises or blockers?  
@@ -158,9 +169,10 @@ Consider improvements or alternative approaches for future iterations.
 ### What lessons did you learn? 
 Summarize the key takeaways and knowledge gained from this experience.
 ```markdown
+I would not limit myself by trying to emulate the official template and probably would try to find an alterntive.
 ```
 
-## Metrics 
+<!-- ## Metrics 
 Here, you’ll summarize some quantitative data about your project development, helping to measure scope, effort, and tool usage.
 
 ### Lines of code: 
@@ -181,5 +193,5 @@ List the number of files you added or significantly changed.
 ### External services used 
 Identify any third-party services or APIs integrated into the project.
 ```markdown
-```
+``` -->
 
