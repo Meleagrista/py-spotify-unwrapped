@@ -10,23 +10,23 @@
     <img src="https://img.shields.io/badge/experimental-%23FFA500?label=status" alt="state" />
     </a>
     <a href="">
-      <img src="https://img.shields.io/github/last-commit/Meleagrista/py-torrent-crawler" alt="last update" />
+      <img src="https://img.shields.io/github/last-commit/Meleagrista/py-spotify-unwrapped" alt="last update" />
     </a>
-    <a href="https://github.com/Meleagrista/py-torrent-crawler/stargazers">
-      <img src="https://img.shields.io/github/stars/Meleagrista/py-torrent-crawler" alt="stars" />
+    <a href="https://github.com/Meleagrista/py-spotify-unwrapped/stargazers">
+      <img src="https://img.shields.io/github/stars/Meleagrista/py-spotify-unwrapped" alt="stars" />
     </a>
-    <a href="https://github.com/Meleagrista/py-torrent-crawler/network/members">
-      <img src="https://img.shields.io/github/forks/Meleagrista/py-torrent-crawler" alt="forks" />
+    <a href="https://github.com/Meleagrista/py-spotify-unwrapped/network/members">
+      <img src="https://img.shields.io/github/forks/Meleagrista/py-spotify-unwrapped" alt="forks" />
     </a>
-    <a href="https://github.com/Meleagrista/py-torrent-crawler/blob/master/LICENSE.txt">
-      <img src="https://img.shields.io/github/license/Meleagrista/py-torrent-crawler" alt="license" />
+    <a href="https://github.com/Meleagrista/py-spotify-unwrapped/blob/master/LICENSE.txt">
+      <img src="https://img.shields.io/github/license/Meleagrista/py-spotify-unwrapped" alt="license" />
     </a>
   </p>
 
   <h4>
-    <a href="https://github.com/Meleagrista/py-torrent-crawler/blob/master/docs/CHALLEGE.md">Challege</a>
+    <a href="https://github.com/Meleagrista/py-spotify-unwrapped/blob/master/docs/CHALLEGE.md">Challege</a>
     <span> · </span>
-    <a href="https://github.com/Meleagrista/py-torrent-crawler/blob/master/docs/OBSERVATIONS.md">Observations</a>
+    <a href="https://github.com/Meleagrista/py-spotify-unwrapped/blob/master/docs/OBSERVATIONS.md">Observations</a>
   </h4>
 </div>
 
