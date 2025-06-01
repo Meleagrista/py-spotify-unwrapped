@@ -74,7 +74,10 @@ Follow these steps to set up and run the project locally.
 Before running this project, ensure you have the following tools installed.
 
 ### Spotify for Developers
-To run the porgram you need either the identification and key of a **Spotify Web API** app or to create one yourself.
+To run the porgram you need either the identification and key of a **Spotify Web API** app or to create one yourself. You can check the [documentation](https://github.com/spotipy-dev/spotipy?tab=readme-ov-file#quick-start) for `spotipy` to see what is needed to set up a **Spotify** app.
+
+> [!WARNING]
+> This section is not finished and pending of change.
 
 ### Poetry
 Poetry is used for dependency management, it is needed to install and manage the libraries for the project.
@@ -95,11 +98,100 @@ After installation, ensure Poetry is added to your `PATH`:
 > [!NOTE] 
 > Poetry is not actually required, you can create an envioment based on the dependencies of `pyproject.toml`
 
+## Installation
+Follow these steps to set up the project on your local machine.
+
+> [!WARNING]
+> This section is not finished and pending of change.
+
+1. Clone the project.
+    ```bash
+    git clone https://github.com/Meleagrista/py-spotify-unwrapped.git
+    ```
+
+2. Go to the project directory.
+    ```bash
+    cd py-spotify-unwrapped
+    ```
+
+3. Build the enviorment, if using **Poetry** it can be done with the following command.
+    ```bash
+    ```
+
+4. Set the neccesary credentials.
+   1. Fill the empty variable in the `.env` file.
+   
+      ```plaintext
+      YOUR_APP_CLIENT_ID=<your_spotify_app_client_id>
+      YOUR_APP_CLIENT_SECRET=<your_spotify_app_client_secret>
+      ```
+    2. Generate or copy a browser session in the `session`folder, with a logged in account in the **Butter** website, which you can access it thought this [link](https://www.spotifyunhinged.com), then rename it to `butter_state.json`.
+
+
+# Usage
+To run the project use the following command:
+```bash
+```
+
+> [!WARNING]
+> This section is not finished and pending of change.
+
+# Roadmap
+The following features and enhancements are planned for development.
+- [ ] Add a template for video generation using a front-end framework or language.
+- [ ] Update the login flow for a more streamlined user experience.
+- [ ] Update credential cache management.
+
+<!-- # Contributing
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Any contributions you make are **greatly appreciated**.
+
+1. Fork the project
+2. Create your feature branch.
+  ```bash
+  git checkout -b feature/AmazingFeature
+  ``` 
+1. Commit your changes.
+  ```bash
+  git commit -m 'Add some AmazingFeature'
+  ``` 
+1. Push to the branch.
+  ```bash
+  git push origin feature/AmazingFeature
+  ``` 
+1. Open a pull request
+
+## Contributors
+<a href="https://github.com/Meleagrista/py-torrent-crawler/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Meleagrista/py-torrent-crawler" alt="contrib.rocks image" />
+</a> -->
+
+
+# License
+This project is licensed under the **GNU General Public License v3.0**. See the [LICENSE.txt](./LICENSE.txt) file for full license details.
+
+# Contact
+Feel free to reach out if you have any questions or feedback.
+
+Martín do Río Rico - [mdoriorico@gmail.com](mailto:mdoriorico@gmail.com)
+
+# Acknowledgements
+Special thanks to the following projects and resources that inspired or supported this project.
+
+- [spotipy](https://github.com/spotipy-dev/spotipy) – A light weight library for the **Spotify Web API**.
+- [Spotify Unhinged](https://www.spotifyunhinged.com) – A video template for a **Spotify** review.
+- [Awesome Readme Template](https://github.com/Louis3797/awesome-readme-template) – A great starting point for crafting high-quality README files.
+- [Best-README-Template](https://github.com/othneildrew/Best-README-Template) – Another excellent template resource for project documentation.
+- [Shields.io](https://shields.io/) – For providing useful badges to enhance the README.
+
+
+
+<!-- Markdown shortcuts -->
 
 [experimental]: https://img.shields.io/badge/experimental-%23FFA500?label=status
 [stable]: https://img.shields.io/badge/stable-%237ED957?label=status
 [unstable]: https://img.shields.io/badge/unstable-%23FF4C4C?label=status
-[archieved]: https://img.shields.io/badge/archieved-%23A0A0A0?label=status
+[archived]: https://img.shields.io/badge/archived-%23A0A0A0?label=status
 
 [python-badge]: https://img.shields.io/badge/python-%233776AB?style=for-the-badge&logo=python&logoColor=white
 [python-url]: https://www.python.org
