@@ -3,7 +3,7 @@
   <img src="/docs/assets/project-logo-01.png" alt="logo" width="200" height="auto"/>
   <h1>Spotify Unwrapped</h1>
   <p>
-    Personalized Spotify Wrapped-style video generation from listeing data, currently in a rudimentary state.
+    Personalized Spotify Wrapped-style video generation from listening data, currently in a rudimentary state.
   </p>
   <p>
     <a href="">
@@ -70,7 +70,7 @@ Follow these steps to set up and run the project locally.
 Before running this project, ensure you have the following tools installed.
 
 ### Spotify for Developers
-To run the porgram you need either the identification and key of a **Spotify Web API** app or to create one yourself. You can check the [documentation](https://github.com/spotipy-dev/spotipy?tab=readme-ov-file#quick-start) for `spotipy` to see what is needed to set up a **Spotify** app.
+To run the program you need either the identification and key of a **Spotify Web API** app or to create one yourself. You can check the [documentation](https://github.com/spotipy-dev/spotipy?tab=readme-ov-file#quick-start) for `spotipy` to see what is needed to set up a **Spotify** app.
 
 > [!WARNING]
 > This section is not finished and pending of change.
@@ -92,7 +92,7 @@ After installation, ensure Poetry is added to your `PATH`:
   ```
 
 > [!NOTE] 
-> Poetry is not actually required, you can create an envioment based on the dependencies of `pyproject.toml`
+> Poetry is not actually required, you can create an environment based on the dependencies of `pyproject.toml`
 
 ## Installation
 Follow these steps to set up the project on your local machine.
