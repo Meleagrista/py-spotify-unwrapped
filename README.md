@@ -49,7 +49,7 @@
 This project tries to generate a monthly _wrapped_ experience inspired by **Spotify’s** official year-in-review. By analyzing your personal listening data, it generates a visual summary of your music habits each month, closely mirroring the style and layout of Spotify's own recap.
 
 ## Project Status
-Originally developed as a challenge within a strict timeframe, the implementation is quite rough. However, several solutions were considered and documented. I may return to the project in the future to refine and improve it further
+Originally developed as a challenge within a strict timeframe, the implementation is quite rough. However, several solutions were considered and documented. I may return to the project in the future to refine and improve it further.
 
 > [!IMPORTANT]
 > Although the project meets its original objective, the current implementation is highly inefficient. It demands significant processing time and relies on a rigid template, which results in a mediocre final output.
@@ -126,7 +126,7 @@ Follow these steps to set up the project on your local machine.
        - Rename the file to `butter_state.json`.
 
 # Usage
-To run the project use the following command:
+Follow the steps below to get started and use the project effectively.
 ```bash
 ```
 
@@ -139,33 +139,8 @@ The following features and enhancements are planned for development.
 - [ ] Update the login flow for a more streamlined user experience.
 - [ ] Update credential cache management.
 
-<!-- # Contributing
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Any contributions you make are **greatly appreciated**.
-
-1. Fork the project
-2. Create your feature branch.
-  ```bash
-  git checkout -b feature/AmazingFeature
-  ``` 
-1. Commit your changes.
-  ```bash
-  git commit -m 'Add some AmazingFeature'
-  ``` 
-1. Push to the branch.
-  ```bash
-  git push origin feature/AmazingFeature
-  ``` 
-1. Open a pull request
-
-## Contributors
-<a href="https://github.com/Meleagrista/py-torrent-crawler/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Meleagrista/py-torrent-crawler" alt="contrib.rocks image" />
-</a> -->
-
-
 # License
-This project is licensed under the **GNU General Public License v3.0**. See the [LICENSE.txt](./LICENSE.txt) file for full license details.
+This project is licensed under the **GNU General Public License v3.0**. See the [LICENSE.txt](./LICENSE) file for full license details.
 
 # Contact
 Feel free to reach out if you have any questions or feedback.
